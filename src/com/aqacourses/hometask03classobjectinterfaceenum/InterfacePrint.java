@@ -1,4 +1,4 @@
-package hometask03classobjectinterfaceenum;
+package com.aqacourses.hometask03classobjectinterfaceenum;
 
 public interface InterfacePrint {
 

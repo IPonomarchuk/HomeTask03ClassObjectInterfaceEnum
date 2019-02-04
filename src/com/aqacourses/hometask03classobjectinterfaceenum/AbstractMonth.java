@@ -1,14 +1,23 @@
-package hometask03classobjectinterfaceenum;
+package com.aqacourses.hometask03classobjectinterfaceenum;
 
 abstract class AbstractMonth {
 
     private String name;
 
+    /**
+     * Constructor
+     *
+     * @param numOfMonth
+     */
     AbstractMonth(int numOfMonth) {
     }
 
+    // Abstract method without any realization
     abstract void printPhrase();
 
+    /**
+     * Enum. It's list of months of the year
+     */
     public enum Month {
         JANUARY,
         FEBRUARY,
@@ -24,6 +33,12 @@ abstract class AbstractMonth {
         DECEMBER
     }
 
+    /**
+     *
+     * @param numOfMonth
+     *
+     * @return string with name of the month by month number
+     */
     String getMonthNameByNum(int numOfMonth) {
 
         switch (numOfMonth) {
@@ -65,7 +80,6 @@ abstract class AbstractMonth {
                 break;
             default:
                 System.out.println("Month doesn't exist");
-                ;
                 break;
         }
 

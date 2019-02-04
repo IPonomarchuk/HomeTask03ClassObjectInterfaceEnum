@@ -1,15 +1,28 @@
-package hometask03classobjectinterfaceenum;
+package com.aqacourses.hometask03classobjectinterfaceenum;
 
+/**
+ * This is public class that implements interface
+ */
 public class Day implements InterfacePrint {
 
     private String name;
     private int numOfDay;
 
+    /**
+     * Method from interface that we must override
+     */
     @Override
     public void printPhrase() {
         System.out.println("It's my life and it's now or never! Cause I ain't gonna live forever, I just want live while I'm alive. It's my life!");
     }
 
+    /**
+     * Method from interface that we must override
+     *
+     * @param numOfDay
+     *
+     * @return string with name of the day by day number
+     */
     @Override
     public String returnDayNameByNum(int numOfDay) {
 
@@ -37,13 +50,19 @@ public class Day implements InterfacePrint {
                 break;
             default:
                 System.out.println("Day doesn't exist");
-                ;
                 break;
         }
 
         return name;
     }
 
+    /**
+     * Method from interface that we must override
+     *
+     * @param name
+     *
+     * @return day number by name of the day
+     */
     @Override
     public int returnDayNumByName(String name) {
 
@@ -71,7 +90,6 @@ public class Day implements InterfacePrint {
                 break;
             default:
                 System.out.println("Day doesn't exist");
-                ;
                 break;
         }
 
